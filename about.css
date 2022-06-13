@@ -1,0 +1,36 @@
+
+.aboutcontainer {
+    display: grid;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:.5fr 1fr 1fr;
+    grid-template-rows:75px auto 25px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "nav nav nav"
+    "ls ct ct"
+    "ft ft ft";
+    border: 2px solid black;
+}
+    
+.navbar{
+    grid-area: nav;
+}
+
+.leftside{
+    grid-area: ls;
+}
+
+.content{
+    grid-area: ct;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
