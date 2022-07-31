@@ -1,0 +1,53 @@
+/* * { */
+  margin: 0;
+  padding: 0;
+}
+
+.contactbox {
+  width: 500px;
+  background-color: #008000;
+  background-image: linear-gradient(green, white, red);
+  box-shadow: 0 0 20px 0 grey;
+  top: 50%;
+  left: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-field {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  border-radius: 14px;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  padding-top: 15px;
+}
+
+.btn {
+  width: 75px;
+  color: white;
+  margin-top: 18px;
+  padding: 10px;
+  background-color: green;
+  font-size: 12px;
+  border: none;
+}
+@media screen and (max-width: 530px) {
+  ..contactbox {
+    display: grid;
+    color: white;
+    background-color: grey;
+    justify-content: center;
+  }
+}

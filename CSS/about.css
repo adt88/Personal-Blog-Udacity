@@ -1,0 +1,62 @@
+@import url(about_2.css);
+
+.aboutcontainer {
+  display: grid;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 0.25fr;
+  grid-template-rows: 75px auto 25px;
+  grid-gap: 20px;
+  grid-template-areas:
+    "nav nav nav"
+    "ls ct ct"
+    "ft ft ft";
+}
+
+.navbar {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: green;
+  background-image: linear-gradient(green, white, red);
+  color: white;
+}
+
+.leftside {
+  grid-area: ls;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px grey;
+  padding: 15px;
+  margin: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.leftside img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutcontainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    color: rgb(7, 0, 0);
+    grid-gap: 30px;
+    padding: 15px;
+    grid-template-areas:
+      "nav"
+      "ls"
+      "ct"
+      "ft";
+  }
+}
